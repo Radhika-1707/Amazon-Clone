@@ -16,7 +16,7 @@ function App() {
   const [{ }, dispatch] = useStateValue();
   useEffect(() => {   //this will only run when app components loads once
 
-    auth.onAuthStateChanged(authUser => {
+    auth.onAuthStateChanged((authUser) => {
       console.log('THE USER IS >>>>', authUser);
 
       if (authUser) {
@@ -57,7 +57,7 @@ function App() {
           <Route path="/payment">
             <Header />
             <Elements stripe={promise}>
-              <Payment/>
+              <Payment />
             </Elements>
           </Route>
           <Route path="/">

@@ -16,7 +16,7 @@ function Product({id,title,price,image,rating}) {
                 image:image,
                 price: price,
                 rating: rating,
-            }
+            },
         });
 
     };
